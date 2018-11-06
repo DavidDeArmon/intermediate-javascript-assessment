@@ -13,8 +13,10 @@
 // return the result of your updateAnimal invocation
 
 // CODE HERE...
-
-
+function callBinding(magicAnimals,updateAnimal,id){
+   const animal = magicAnimals.find(e=>e.id=id)
+    return  updateAnimal.call(animal,'Trogdor')
+}
 
 // *************
 // * PROBLEM 2 *
@@ -28,7 +30,10 @@
 // return the result of your updateAnimal invocation
 
 // CODE HERE...
-
+function applyBinding(magicAnimals,updateAnimal,id){
+   const animal = magicAnimals.find(e=>e.id=id)
+    return  updateAnimal.apply(animal,['being majestic', 'eating rainbows'])
+}
 
 
 // *************
@@ -48,6 +53,9 @@
 var foo;
 
 // CODE HERE...
+function promistMe($q){
+    
+}
 
 
 
